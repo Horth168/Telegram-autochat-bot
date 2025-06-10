@@ -7,7 +7,7 @@ import time
 api_id = int(os.getenv("API_ID"))
 api_hash = os.getenv("API_HASH")
 phone = os.getenv("PHONE")
-recipient = int(os.getenv("TARGET_ID"))
+recipient = os.getenv("TARGET_USERNAME")  # Use string instead of int
 
 app = Flask(__name__)
 
